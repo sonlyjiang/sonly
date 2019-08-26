@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登陆界面</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-color: #5ea9a6;
+			position: relative;
+			animation: dh 10s linear infinite;
+			overflow: hidden;
+		}
+		.jz{
+			margin: 100px auto 0px;
+			width: 300px;
+			text-align: center;
+		}
+		h1{
+			color: #fff;
+			font-size: 50px;
+			line-height: 100px;
+		}
+		input{
+			width: 300px;
+			height: 50px;
+			margin: 10px;
+			text-align: center;
+			border: none;
+			border: 1px solid #fff;
+			
+			font-size: 20px;
+		}
+		li{
+			list-style: none;
+		}
+		.one{
+			background: rgba(255, 255, 255, 0.3);
+			color: #fff;
+
+		}
+		input::-webkit-input-placeholder { /* WebKit browsers */
+    		color: #fff;
+		}
+		.two{
+			color: #5ea9a6;
+			background-color: #fff;
+			font-weight: bold;
+		}
+		.fd li{
+			
+			/* width: 100px;
+			height: 100px; */
+			background: rgba(255, 255, 255, 0.3);
+			animation: dong 6s linear infinite;
+			/* animation: play 6s linear infinite; */
+			position: absolute;
+		}
+		.fd #a{
+			width: 50px;
+			height: 50px;
+			left: 100px;
+		}
+		.fd #b{
+			width: 50px;
+			height: 50px;
+			right: 100px;
+			animation: dong 8s linear infinite;
+		}
+		.fd #c{
+			width: 100px;
+			height: 100px;
+			left: 200px;
+			top: 100px;
+			animation: dong 20s linear infinite;
+		}
+		.fd #d{
+			width: 100px;
+			height: 100px;
+			right: 300px;
+			top: 300px;
+			animation: dong 30s linear infinite;
+		}
+		.fd #e{
+			width: 50px;
+			height: 50px;
+			right: 500px;
+			top: 200px;
+			animation: dong 15s linear infinite;
+		}
+		.fd #f{
+			width: 150px;
+			height: 150px;
+			right: 800px;
+			top: 250px;
+			animation: dong 50s linear infinite;
+		}
+
+		@keyframes dong{
+			0%{
+				transform: rotate(0deg);
+				
+			}
+			100%{
+				transform: rotate(360deg);
+				
+			}
+		}
+		@keyframes dh{
+			0%,100%{
+				background-color: #5ea9a6;
+			}
+			20%{
+				background-color: #5459cf;
+			}
+			40%{
+				background-color: #ca54cf;
+			}
+			60%{
+				background-color: pink;
+			}
+			80%{
+				background-color: #cf0064;
+			}
+
+		}
+		@keyframes play{
+			from{
+				transform: translate(0px,200px) rotate(0deg);
+			}
+			to{
+				transform: translate(0px,-650px) rotate(360deg);
+			}
+		}
+		.qp{
+			position: relative;
+		}
+		.qp li{
+			background: rgba(255, 255, 255, 0.3);
+			animation: play 10s linear infinite;
+			/* animation: play 6s linear infinite; */
+			position: absolute;
+			border-radius: 20%;
+		}
+		.qp #aa{
+			width: 50px;
+			height: 50px;
+			left: 30px;
+			bottom: -100px;
+		}
+		.qp #bb{
+			width: 50px;
+			height: 50px;
+			right: 300px;
+			bottom: 0px;
+			/* animation: play 8s linear infinite; */
+		}
+		.qp #cc{
+			width: 100px;
+			height: 100px;
+			left: 600px;
+			bottom: -200px;
+			/* animation: play 12s linear infinite; */
+		}
+		.qp #dd{
+			width: 100px;
+			height: 100px;
+			right: 1000px;
+			bottom: -50px;
+			/* animation: play 30s linear infinite; */
+		}
+		.qp #ee{
+			width: 50px;
+			height: 50px;
+			right: 600px;
+			bottom: -100px;
+			/* animation:play 15s linear infinite; */
+		}
+		.qp #ff{
+			width: 150px;
+			height: 150px;
+			right: 400px;
+			bottom: 0px;
+			/* animation: play 50s linear infinite; */
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="jz">
+			<h1>Welcome</h1>
+			<form action="">
+				<input type="text" required placeholder="Username" class="one">
+				<input type="password" required placeholder="Password" class="one">
+				<input type="submit" value="Login" class="two">
+			</form>
+		</div>
+		<div class="fd">
+			<li id="a">
+				
+			</li>
+			<li id="b"></li>
+			<li  id="c"></li>
+			<li id="d"></li>
+			<li id="e"></li>
+			<li id="f"></li>
+		</div>
+
+		<div class="qp">
+			<li id="aa">
+				
+			</li>
+			<li id="bb"></li>
+			<li  id="cc"></li>
+			<li id="dd"></li>
+			<li id="ee"></li>
+			<li id="ff"></li>
+		</div>
+	</div>
+</body>
+</html>
